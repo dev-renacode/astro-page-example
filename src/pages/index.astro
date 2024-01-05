@@ -1,0 +1,63 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Cards from '../components/Cards.astro';
+import BadgeNovedad from '../components/BadgeNovedad.astro';
+import Bento from '../components/Bento.astro';
+---
+
+<Layout title="Astro x TailwindCSS">
+	<main>
+		<div class="contain max-w-screen-lg mx-auto px-5">
+			<div class="box font-semibold text-4xl pt-5 flex justify-center">
+				<h1 class="flex items-center flex-col text-center lg:flex-row gap-4">
+					Prueba Astro x TailwindCSS
+					<a class="flex" target="_blank" href="https://docs.astro.build/en/install/auto/">
+						<span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Install</span>
+
+					</a>
+				</h1>
+			</div>
+
+			<div class="pb-32">
+				<div class="parraf py-7 text-center">
+					<p class="text-2xl text-pretty">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, temporibus corrupti eligendi nisi modi similique commodi enim aliquam ex sit ipsa unde incidunt, inventore asperiores ab provident ut. Quibusdam, officia.
+					</p>
+				</div>
+		
+				<div class="cards-contain flex flex-col lg:flex-row w-full items-center gap-4">
+					<Cards/>
+					<Cards/>
+					<Cards/>
+				</div>
+			</div>
+
+			<div class="parraf pb-32">
+				<div class="flex justify-center text-center">
+					<h2 class="text-4xl font-bold items-center flex flex-col lg:flex-row gap-4">
+						Astro 4.0 
+						<a class="flex items-center" target="_blank" href="https://docs.astro.build/es/guides/upgrade-to/v4/#astro-v40-banderas-experimentales-eliminadas">
+							<BadgeNovedad/>
+						</a>
+					</h2>
+				</div>
+				<p class="text-2xl py-7 text-center text-pretty">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis quisquam quas nostrum quo sapiente maxime. Maxime quibusdam ullam expedita eius voluptatem sunt, debitis rem temporibus nisi suscipit, possimus provident?
+				</p>
+				
+				<div class="">
+
+				</div>
+			</div>
+
+			<div class="info">
+				<Bento/>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+
+</style>
