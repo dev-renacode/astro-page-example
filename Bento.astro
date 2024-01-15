@@ -1,0 +1,39 @@
+---
+import BadgeNovedad from './BadgeNovedad.astro';
+import BentoItem from './BentoItem.astro'
+---
+
+<section 
+    class={`
+        w-full max-w-[1024px]
+        grid grid-cols-10 auto-rows-[25rem] gap-4
+        mx-auto pb-32
+        `}
+>
+<BentoItem class="col-span-10 lg:col-span-5" title="Astro Layouts">
+    <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-blend-luminosity bg-cover object-cover object-center bg-no-repeat bg-purple-950/80 z-0"
+
+        style="background-image: url('/mountain-1.webp');"
+    />
+    <p slot="content" class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, fugiat cupiditate magni excepturi at perferendis magnam aspernatur, <strong>tempora corrupti sunt</strong>, aut cum animi numquam nihil pariatur <strong>repudiandae nobis iure?</strong> Quam.</p>
+</BentoItem>
+<BentoItem class="col-span-10 lg:col-span-5" title="Tailwind Updates" subtitle="Update 20 de Diciembre de 2023">
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-blend-luminosity bg-cover object-cover object-center bg-no-repeat bg-purple-950/80 z-0"
+
+    style="background-image: url('/luz.webp');"
+/>
+</BentoItem>
+<BentoItem class="col-span-10 lg:col-span-10" title="CSS News" subtitle="5 de Enero de 2024">
+    <p slot="content"><BadgeNovedad/></p>
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-blend-luminosity bg-cover object-cover object-center bg-no-repeat bg-purple-950/80 z-0"
+
+    style="background-image: url('/person.webp');"
+/>
+</BentoItem>
+</section>
